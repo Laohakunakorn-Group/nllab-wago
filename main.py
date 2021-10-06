@@ -1,5 +1,6 @@
 # GUI control of Wago 750 PLC
 # using PyQt5 and Pymodbus
+# N Laohakunakorn, University of Edinburgh, 2021
 
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
