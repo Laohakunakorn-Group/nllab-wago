@@ -295,22 +295,11 @@ class MainWindow(QMainWindow):
 
     # Commands programmed here
     def action(self,results):
-        if results=='A':
+        if results:
             self.bc.setText(results) # update text box
-            self.writeInputCommand(self.A)
+            self.writeInputCommand(eval('self.'+results))
             self.setButtonsState()
-        elif results=='B':
-            self.bc.setText(results) # update text box
-            self.writeInputCommand(self.B)
-            self.setButtonsState()
-        elif results=='C':
-            self.bc.setText(results) # update text box
-            self.writeInputCommand(self.C)
-            self.setButtonsState()
-        elif results=='D':
-            self.bc.setText(results) # update text box
-            self.writeInputCommand(self.D)
-            self.setButtonsState()
+
 
     def getButtonsState(self):
         # read state of buttons and display bin/Hex
